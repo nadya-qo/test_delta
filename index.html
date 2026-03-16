@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Test DELTA</title>
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <link rel="stylesheet" href="/common.css">
+</head>
+<body>
+   
+<div class="dashboard">
+   <table id="metricsTable">
+      <thead>
+         <tr class="no-pointer">
+            <th>Показатель</th>
+            <th class="light-green-col">Текущий день</th>
+            <th>Вчера</th>
+            <th>Этот день недели</th>
+         </tr>
+      </thead>
+
+      <tbody id="topRows"></tbody>
+
+      <tbody>
+         <tr>
+            <td colspan="4" class="chart-bg">
+               <div class="chart-wrapper">
+                  <canvas id="chart"></canvas>
+               </div>
+            </td>
+         </tr>
+      </tbody>
+
+      <tbody id="bottomRows"></tbody>
+
+   </table>
+</div>
+
+<script src="/common.js" defer></script>
+</body>
+</html>
